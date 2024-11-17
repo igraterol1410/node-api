@@ -1,0 +1,32 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "first api deploy to production",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igraterol1410/node-api.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express"
+  ],
+  "author": "Isaid Graterol - Igradev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igraterol1410/node-api/issues"
+  },
+  "homepage": "https://github.com/igraterol1410/node-api#readme",
+  "dependencies": {
+    "express": "4.21.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "standard": "^17.1.2"
+  }
+}

@@ -1,0 +1,30 @@
+### OBTENER TODAS LAS PELICULAS
+GET http://localhost:3001/movies
+
+### OBTENER UNA PELICULA EN ESPECIFICO
+GET http://localhost:3001/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+
+### OBTENER PELICULAS DE UN GENERO EN ESPECIFICO
+GET http://localhost:3001/movies?genre=crime
+
+### CREAR UNA NUEVA PELICULA
+POST http://localhost:3001/movies
+Content-Type: application/json
+
+{
+  "title": "Pelicula de prueba",
+  "year": 1800,
+  "director": "Isaid Graterol",
+  "duration": 171,
+  "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+  "genre": ["Comedy"],
+  "rate": 0
+}
+
+### ACTUALIZAR UNA PELICULA
+PATCH http://localhost:3001/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+Content-Type: application/json
+
+{
+  "year": 1900
+}
